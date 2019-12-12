@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio | Jordyn Saltzman</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="../pagePiling.js-master/jquery.pagepiling.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,600,700|Judson:400,400i&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="pagepiling">
+        <div class="section home-area" id="home">
+            <div class="wrapper">
+                <nav>
+                    <ul id="menu">
+                        <li data-menuanchor="home" class="active"><a class="nav-link" href="#home">Home</a></li>
+                        <li data-menuanchor="about"><a class="nav-link" href="#about">About</a></li>
+                        <li data-menuanchor="projects"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li data-menuanchor="contact"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div id="main-banner">
+                    <h1 id="name-header">Jordyn Saltzman</h1>
+                </div>
+            </div>
+        </div>
+        <div class="section about-area" id="about">
+            <div class="wrapper">
+                <h1 id="about-header">About</h1>
+                <p class="body-text"> Hello, I'm Jordyn. I am a recent graduate from Towson University with a B.S. in Economics. Since June 2019, I have
+                    been
+                    working as a Digital Account Manager at AltaVista Strategic Partners, a firm specializing in
+                    marketing
+                    services for contractors. I enjoy the probelm-solving and analytical aspects of my work, however, I
+                    see myself moving away from the field of
+                    marketing in the future. </p>
+                <p class="body-text">
+                    Outside of work, I enjoy travel and I love learning new languages. I am fluent in Spanish and can
+                    speak Mandarin Chinese at an intermediate level. In each country I go to, I try to learn as much of the
+                    local language that I can. Currently, I am taking this skill to the next level by trying to master programming 
+                    languages at the Coding Boot Camp at Johns Hopkins University.
+                </p>
+                <a id="viewprojects" href="#projects">Check Out What I'm Working On</a>
+            </div>
+        </div>
+        <div class="section projects-area">
+            <div class="wrapper">
+                <h1 id="projects-header">Projects</h1>
+                <h6>Check out some of the things I've been working on.</h6>
+            </div>
+        </div>
+        <div class="section contact-area">
+            <div class="wrapper">
+                <h1 id="contact-header">Contact</h1>
+                <h6 id="reach-out">Have a question or want to work together? Reach out!</h6>
+            </div>
+            <div id="form">
+                <p> <input id="name" name="name" required="required" placeholder="Enter Your Name"> </p>
+                <p><input id="email" name="email" required="required" placeholder="Enter Your Email"></p>
+                <p><textarea id="message" name="message" required="required" placeholder="Leave A Message"></textarea>
+                </p>
+                <p><input type="submit" value="Submit" id="submit-btn"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../pagePiling.js-master/jquery.pagepiling.min.js"></script>
+    <script src="../pagePiling.js-master/jquery.pagepiling.js"></script>
+    <script src="assets/index.js"></script>
+</body>
+
+</html>

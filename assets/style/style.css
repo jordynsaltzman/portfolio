@@ -1,0 +1,168 @@
+nav{
+    position: absolute;
+    top: 0;
+    height: 50px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    padding: 15px 5px;
+    margin: 10px 10px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: rgb(236, 30, 150);
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 900;
+}
+
+.nav-link:hover{
+    color: white;
+    text-emphasis: initial;
+    font-style: italic;
+}
+
+.home-area{
+    background-image: url("../images/hexagons2.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+#name-header{
+   color: whitesmoke;
+   font-family: 'Chakra Petch', sans-serif;
+   text-shadow: 6px 6px 6px rgb(236, 30, 150);
+    font-weight: bolder;
+    font-size: 100px;
+
+}
+
+.wrapper{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.about-area{
+    background:  rgb(236, 30, 150);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+#about-header{
+font-family: 'Chakra Petch', sans-serif;
+   text-shadow: 6px 6px 6px whitesmoke;
+    font-weight: bolder;
+    font-size: 100px;
+}
+
+.projects-area{
+    background: whitesmoke;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+#projects-header{
+    font-family: 'Chakra Petch', sans-serif;
+    color:  rgb(236, 30, 150);
+   text-shadow: 6px 6px 6px #212529;
+    font-weight: bolder;
+    font-size: 100px;
+}
+
+
+.contact-area{
+    background-image: url("../images/hexagons2.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+#contact-header{
+    color: whitesmoke;
+    font-family: 'Chakra Petch', sans-serif;
+    text-shadow: 6px 6px 6px rgb(236, 30, 150);
+     font-weight: bolder;
+     font-size: 100px;
+ 
+ }
+
+ #message{
+     width: 30%;
+     height: 120px;
+     padding: 10px 20px;
+     border-radius: 5px;
+     font-family: 'Chakra Petch', sans-serif;
+ }
+
+ #email, #name{
+     width: 30%;
+     height: 40px;
+     padding: 0 20px;
+     border-radius: 5px;
+     font-family: 'Chakra Petch', sans-serif;
+     
+ }
+
+ #reach-out{
+     color: whitesmoke;
+     font-family: 'Chakra Petch', sans-serif;
+     font-size: 20px;
+ }
+ #form{
+     margin-left: 100px;
+ }
+
+ #submit-btn{
+     background-color: rgb(236, 30, 150);
+     border: none;
+     padding: 5px 25px;
+     color: whitesmoke;
+     border-radius: 5px;
+ }
+
+ .body-text{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+ }
+
+ #viewprojects{
+     background-color: #212529;
+     color: whitesmoke;
+     padding: 10px 20px;
+     text-decoration: none;
+     font-family: 'Chakra Petch', sans-serif;
+     box-shadow: 3px 3px 3px black;
+     border-radius: 5px;
+ }
+
+ #viewprojects:hover{
+     padding: 12px 22px;
+ }
+
+
+ @media only screen and (min-width: 768px) and (max-width: 991px){
+
+ }
+
+ @media only screen and (max-width: 767px){
+     .wrapper{
+         width: 90%;
+     }
+
+     nav{
+         display: none;
+     }
+
+     #name-header, #projects-header, #about-header, #contact-header{
+         font-size: 40px
+             }
+ }
