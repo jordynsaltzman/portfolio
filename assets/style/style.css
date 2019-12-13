@@ -164,15 +164,15 @@ font-family: 'Chakra Petch', sans-serif;
 
      li {
          padding: 5px;
-
+         display: none;
      }
 
      .nav-link{
-         font-size: small;
+         display: none;
      }
 
      #name-header, #projects-header, #about-header, #contact-header{
-         font-size: 40px
+         font-size: 45px
              }
     #email, #name, #message{
                 width: 80%;
