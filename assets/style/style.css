@@ -23,9 +23,7 @@ li {
 }
 
 .nav-link:hover{
-    color: white;
-    text-emphasis: initial;
-    font-style: italic;
+    color: rgb(255, 87, 185);
 }
 
 .home-area{
@@ -45,7 +43,7 @@ li {
 }
 
 .wrapper{
-    width: 1170px;
+    /* width: 1170px; */
     margin-left: 5%;
 }
 
@@ -109,7 +107,6 @@ font-family: 'Chakra Petch', sans-serif;
      padding: 0 20px;
      border-radius: 5px;
      font-family: 'Chakra Petch', sans-serif;
-     
  }
 
  #reach-out{
@@ -117,6 +114,7 @@ font-family: 'Chakra Petch', sans-serif;
      font-family: 'Chakra Petch', sans-serif;
      font-size: 20px;
  }
+
  #form{
      margin-left: 5%;
      width: 100%;
@@ -124,20 +122,30 @@ font-family: 'Chakra Petch', sans-serif;
 
  #submit-btn{
      background-color: rgb(236, 30, 150);
+     font-family: 'Chakra Petch', sans-serif;
+     font-weight: 500;
      border: none;
      padding: 5px 25px;
      color: whitesmoke;
      border-radius: 5px;
  }
 
- .body-text{
+
+
+
+ .container{
+    background-color: rgb(247, 68, 172) ;
+    border-radius: 5px;
+    padding: 30px;
     font-family: 'Chakra Petch', sans-serif;
-    font-size: 14px;
-    width: 80%;
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+    line-height: 27px;
     margin: 0 5% 0 5%;
  }
 
- #viewprojects{
+ #viewprojects a{
      background-color: #212529;
      color: whitesmoke;
      padding: 10px 20px;
@@ -148,9 +156,6 @@ font-family: 'Chakra Petch', sans-serif;
      margin-left: 5%;
  }
 
- #viewprojects:hover{
-     padding: 12px 22px;
- }
 
 
  @media only screen and (min-width: 768px) and (max-width: 991px){
@@ -172,9 +177,15 @@ font-family: 'Chakra Petch', sans-serif;
      }
 
      #name-header, #projects-header, #about-header, #contact-header{
-         font-size: 45px
+         font-size: 55px
              }
     #email, #name, #message{
                 width: 80%;
 
  }
+ .body-text{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 14px;
+    line-height: 15px;
+ }
+}
