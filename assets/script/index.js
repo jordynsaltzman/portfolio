@@ -24,44 +24,44 @@ $(document).ready(function () {
         offset: '-=1000'
     });
 
-   
-    var submit = document.getElementById("submit-btn");
+
+    let submit = document.getElementById("submit-btn");
+    let projectBtn = document.getElementById("viewprojects");
 
     function animateButton(scale, duration, elasticity) {
+        anime({
+            targets: submit,
+            scale: scale,
+            duration: duration,
+            elasticity: elasticity
+        });
+    };
+
+    function enterButton() {
         anime.remove(submit);
-        anime({
-          targets: submit,
-          scale: scale,
-          duration: duration,
-          elasticity: elasticity
-        });
-      };
-      
-      function enterButton() { animateButton(1.12, 800, 400) };
-      function leaveButton() { animateButton(1.0, 600, 300) };
-      submit.addEventListener('mouseenter', enterButton, false);
-      submit.addEventListener('mouseleave', leaveButton, false);
+        animateButton(1.12, 800, 400)
+    };
+
+    function leaveButton() { 
+        anime.remove(submit);
+        animateButton(1.0, 600, 300) 
+    };
+
+    submit.addEventListener('mouseenter', enterButton, false);
+    submit.addEventListener('mouseleave', leaveButton, false);
 
 
-
-
-      var projectBtn = document.getElementById("viewprojects");
-
-    function animateProjButton(scale, duration, elasticity) {
+    function enterProjButton() {
         anime.remove(projectBtn);
-        anime({
-          targets: projectBtn,
-          scale: scale,
-          duration: duration,
-          elasticity: elasticity
-        });
-      };
-      
-      function enterProjButton() { animateProjButton(1.05, 800, 50) };
-      function leaveProjButton() { animateProjButton(1.0, 600, 300) };
-      projectBtn.addEventListener('mouseenter', enterProjButton, false);
-      projectBtn.addEventListener('mouseleave', leaveProjButton, false);
-      
-      
-      
+        animateButton(1.05, 800, 50)
+    };
+
+    function leaveProjButton() { 
+        anime.remove(projectBtn);
+        animateButton(1.0, 600, 300) 
+    };
+
+    projectBtn.addEventListener('mouseenter', enterProjButton, false);
+    projectBtn.addEventListener('mouseleave', leaveProjButton, false);
+
 });
