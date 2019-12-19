@@ -26,6 +26,35 @@ li {
     color: rgb(255, 87, 185);
 }
 
+#footer{
+    background-color: black;
+    height: 40px;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    
+    opacity: 70%;
+}
+
+.icon{
+    color: rgb(236, 30, 150);
+}
+
+.icon:hover{
+    color: rgb(255, 87, 185);
+}
+
+.icon:active{
+    color: whitesmoke;
+}
+.fa-linkedin, .fa-envelope{
+    margin-left: 50px;
+}
 .home-area{
     background-image: url("../images/hexagons2.png");
     -webkit-background-size: cover;
@@ -61,7 +90,7 @@ font-family: 'Chakra Petch', sans-serif;
 }
 
 #headshot{
-    height: 18%;
+    height: 300px;
     border-radius: 100%;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
@@ -95,7 +124,6 @@ font-family: 'Chakra Petch', sans-serif;
     text-shadow: 6px 6px 6px rgb(236, 30, 150);
      font-weight: bolder;
      font-size: 100px;
- 
  }
 
  #message{
@@ -103,7 +131,7 @@ font-family: 'Chakra Petch', sans-serif;
      height: 120px;
      padding: 10px 20px;
      border-radius: 5px;
-     font-family: 'Chakra Petch', sans-serif;
+     font-family: 'Courier New', Courier, monospace;
  }
 
  #email, #name{
@@ -111,12 +139,12 @@ font-family: 'Chakra Petch', sans-serif;
      height: 40px;
      padding: 0 20px;
      border-radius: 5px;
-     font-family: 'Chakra Petch', sans-serif;
+     font-family: 'Courier New', Courier, monospace;
  }
 
  #reach-out{
      color: whitesmoke;
-     font-family: 'Chakra Petch', sans-serif;
+     font-family: 'Courier New', Courier, monospace;
      font-size: 16px;
      font-weight: 400;
  }
@@ -136,36 +164,34 @@ font-family: 'Chakra Petch', sans-serif;
      border-radius: 5px;
  }
 
-
 .row{
     background-color: rgb(247, 68, 172) ;
     border-radius: 5px;
     padding: 30px;
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
     color: black;
     font-weight: 400;
-    line-height: 27px;
+    line-height: 20px;
     height: 100%;
  }
 
- 
 
- #viewprojects a{
+ #viewprojects{
      background-color: #212529;
      color: whitesmoke;
-     padding: 10px 20px;
+     padding: 10px 15px;
      text-decoration: none;
      font-family: 'Chakra Petch', sans-serif;
      box-shadow: 3px 3px 3px black;
      border-radius: 5px;
      margin-left: 5%;
+     margin-bottom: 5px;
+     font-size: 14px;
  }
 
 
-
  @media only screen and (min-width: 768px) and (max-width: 991px){
-
  }
 
  @media only screen and (max-width: 767px){
@@ -191,14 +217,26 @@ font-family: 'Chakra Petch', sans-serif;
     }
 
     .body-text{
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 14px;
-    line-height: 15px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 12px;
+        line-height: 13px;
+        float: left;
     }
 
     #headshot{
-        height: 9%;
-        border-radius: 100%;
-        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .row{
+        padding: 10px;
+    }
+
+    #viewprojects{
+        background-color: #212529;
+        color: whitesmoke;
+        padding: 5px 10px;
+        font-size: 12px;
+        
     }
 }

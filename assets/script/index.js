@@ -26,7 +26,7 @@ $(document).ready(function () {
 
 
     let submit = document.getElementById("submit-btn");
-    let projectBtn = document.getElementById("viewprojects");
+    
 
     function animateButton(scale, duration, elasticity) {
         anime({
@@ -36,6 +36,7 @@ $(document).ready(function () {
             elasticity: elasticity
         });
     };
+
 
     function enterButton() {
         anime.remove(submit);
@@ -51,14 +52,25 @@ $(document).ready(function () {
     submit.addEventListener('mouseleave', leaveButton, false);
 
 
+    let projectBtn = document.getElementById("viewprojects");
+
+    function viewProjects(scale, duration, elasticity) {
+        anime({
+            targets: projectBtn,
+            scale: scale,
+            duration: duration,
+            elasticity: elasticity
+        });
+    };
+    
     function enterProjButton() {
         anime.remove(projectBtn);
-        animateButton(1.05, 800, 50)
+        viewProjects(1.12, 800, 50)
     };
 
     function leaveProjButton() { 
         anime.remove(projectBtn);
-        animateButton(1.0, 600, 300) 
+        viewProjects(1.0, 600, 300) 
     };
 
     projectBtn.addEventListener('mouseenter', enterProjButton, false);
