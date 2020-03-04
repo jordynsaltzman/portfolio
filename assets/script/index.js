@@ -53,33 +53,21 @@ $(document).ready(function() {
 
   //submit event handler
 
-  let name = $("#name").val();
-  let email = $("#email").val();
-  let message = $("#message").val();
-  let status = $("#form-status");
-  let button = $("#submit-btn");
-
-  function formSuccess() {
-    button.attr("display: none ");
-    status.innerHTML = "Thanks!";
-  }
-
-  function formError() {
-    status.innerHTML = "Oops! There was a problem.";
-  }
-
-  button.on("click", function(event) {
+  $("#submit-btn").on("click", function(event) {
     event.preventDefault();
-    if (
-      email.length > 5 &&
-      email.includes("@") &&
-      email.includes(".") &&
-      name.length > 1 &&
-      message.length > 1
-    ) {
-      formSuccess();
+    console.log("CLICKED");
+    let name = $("#name").val();
+    let email = $("#email").val();
+    let message = $("#message").val();
+    let status = $("#form-status");
+
+    if (email && message && name) {
+      console.log("YAY");
+      $("#submit-btn").attr("display: none ");
+      status.innerHTML = "Thanks!";
     } else {
-      formError();
+      console.log("OOPS");
+      status.innerHTML = "Oops! There was a problem.";
     }
   });
 
