@@ -298,11 +298,13 @@ span {
   }
 
   .nav-link {
-    display: none;
+    /* display: none; */
   }
 
   li {
     display: none;
+    padding: 10px 5px;
+    margin: 5px 5px;
   }
 
   #name-header,
@@ -332,12 +334,5 @@ span {
 
   .row {
     padding: 10px;
-  }
-
-  #viewprojects {
-    background-color: #212529;
-    color: whitesmoke;
-    padding: 5px 10px;
-    font-size: 12px;
   }
 }
