@@ -1,101 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Portfolio | Jordyn Saltzman</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,600,700|Judson:400,400i&display=swap"
-        rel="stylesheet">
-
-</head>
-
-<body>
-    <div id="pagepiling">
-        <div class="section home-area" id="home">
-            <div class="wrapper">
-                <nav>
-                    <ul id="menu">
-                        <li data-menuanchor="home" class="active"><a class="nav-link" href="#home">HOME</a></li>
-                        <li data-menuanchor="about"><a class="nav-link" href="#about">ABOUT</a></li>
-                        <li data-menuanchor="projects"><a class="nav-link" href="#projects">PROJECTS</a></li>
-                        <li data-menuanchor="contact"><a class="nav-link" href="#contact">CONTACT</a></li>
-                    </ul>
-                </nav>
-                <div id="main-banner">
-                    <h1 id="name-header">Jordyn Saltzman</h1>
-                </div>
-            </div>
-        </div>
-        <div class="section about-area" id="about">
-            <div class="wrapper">
-                <h1 id="about-header">About</h1>
-                <div class="container">
-                    <div class="row">
-                            <div class="col-md-4">
-                                    <img id="headshot" src="assets/images/jorjor1.jpg">
-                                </div>
-                        <div class="col-md-8">
-                            <p class="body-text"> Hello, I'm Jordyn. I am a recent graduate from Towson University with
-                                a B.S.
-                                in Economics. Since June 2019, I have
-                                been a Digital Account Manager at AltaVista Strategic Partners, a firm
-                                specializing in
-                                marketing
-                                services for contractors. </p>
-                            <p class="body-text">
-                                Outside of work, I am passionate about travel and learning new languages. I am fluent in
-                                Spanish and
-                                speak Mandarin at an intermediate level. In each place I visit, I try to learn
-                                as much of the
-                                local language that I can.
-                                Currently, I am taking this skill to a new level by attempting to master
-                                programming
-                                languages at the Coding Boot Camp at Johns Hopkins University. I am excited to be taking the
-                                plunge into
-                                a new field that marries my love of languages, design, and critical thinking.
-                            </p>
-    
-                            <a href="#projects" id="viewprojects">Check Out What I'm Working On</a>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section projects-area">
-            <div class="wrapper">
-                <h1 id="projects-header">Projects</h1>
-            </div>
-        </div>
-        <div class="section contact-area">
-            <div class="wrapper">
-                <h1 id="contact-header">Contact</h1>
-                <h6 id="reach-out">Have a question or want to work together? Reach out!</h6>
-            </div>
-            <div id="form">
-                <p><input id="name" name="name" required="required" placeholder="Enter Your Name"> </p>
-                <p><input id="email" name="email" required="required" placeholder="Enter Your Email"></p>
-                <p><textarea id="message" name="message" required="required" placeholder="Leave A Message"></textarea></p>
-                <p><input type="submit" value="SUBMIT" id="submit-btn"></p>
-            </div>
-        </div>
-        <div id="footer">
-            <p> <a href="https://github.com/jordynsaltzman" target="_blank"><i class="fab fa-github icon"></i></a>  <a href="https://www.linkedin.com/in/jordynsaltzman" target="_blank"><i class="fab fa-linkedin icon"></i></a>  <a href="https://www.linkedin.com/in/jordynsaltzman" target="_blank"><i class="far fa-envelope icon"></i></a></p>
-        </div>
-    </div>
-
-
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,600,700|Judson:400,400i&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.js"></script>
-    <script src="https://kit.fontawesome.com/9a4787716d.js" crossorigin="anonymous"></script>
-    <script src="assets/script/index.js"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/9a4787716d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
+  <body>
+    <div id="pagepiling" style="display: none;">
+      <div class="section home-area" id="home">
+        <div class="wrapper">
+          <nav>
+            <ul id="menu">
+              <li data-menuanchor="home" class="active">
+                <a class="nav-link" href="#home">HOME</a>
+              </li>
+              <li data-menuanchor="about">
+                <a class="nav-link" href="#about">ABOUT</a>
+              </li>
+              <li data-menuanchor="projects">
+                <a class="nav-link" href="#projects">PROJECTS</a>
+              </li>
+              <li data-menuanchor="contact">
+                <a class="nav-link" href="#contact">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+          <div id="main-banner">
+            <h1 id="name-header">Jordyn Saltzman</h1>
+          </div>
+        </div>
+      </div>
+      <div class="section about-area" id="about">
+        <div class="wrapper">
+          <h1 id="about-header">Who Am I?</h1>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <img id="headshot" src="assets/images/headshot.jpg" />
+              </div>
+              <div class="col-md-8">
+                <p class="body-text-bold">
+                  Hi, I'm Jordyn. I am a full-stack web developer.
+                </p>
+                <p class="body-text">
+                  I am naturally inquisitive and love figuring out how things
+                  work. I am a student at the Coding Bootcamp at Johns Hopkins
+                  University where I am building a solid foundation in web
+                  development. I have build web applications using HTML5, CSS3,
+                  JavaScript, jQuery, Bootstrap, Express.js, ReactJS, Node.js,
+                  MongoDB, Mongoose, MySQL, Sequelize.js, Command Line, REST
+                  APIs, Git and more. I am excited to be taking the plunge into
+                  a new field that marries my love of problem solving, design, and
+                  abstract thinking.
+                </p>
+                <a href="#projects" id="viewprojects">CHECK OUT MY WORK</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section projects-area">
+        <div class="wrapper">
+          <h1 id="projects-header">Projects</h1>
+
+          <div class="projects-container">
+            <a
+              href="https://jordynsaltzman.github.io/day-planner/"
+              target="_blank"
+            >
+              <img
+                src="assets/images/day-planner.JPG"
+                id="day-planner"
+                class="image"
+                alt="Day Planner"
+              />
+              <div class="overlay">
+                <span>Work Day Planner</span>
+              </div>
+            </a>
+            <a
+              href="https://jordynsaltzman.github.io/weather-app/"
+              target="_blank"
+            >
+              <img
+                src="assets/images/weather-app.JPG"
+                id="weather-app"
+                class="image"
+                alt="Weather Dashboard"
+              />
+              <div class="overlay">
+                <span>Weather Dashboard</span>
+              </div>
+            </a>
+            <a
+              href="https://jordynsaltzman.github.io/coding-quiz/"
+              target="_blank"
+            >
+              <img
+                src="assets/images/coding-quiz.JPG"
+                id="code-quiz"
+                class="image"
+                alt="Code Quiz"
+              />
+              <div class="overlay">
+                <span>Coding Quiz</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <form class="section contact-area">
+        <div class="wrapper">
+          <h1 id="contact-header">Contact</h1>
+          <h6 class="reach-out">
+            Have a question or want to work together? Reach out!
+          </h6>
+        </div>
+        <div id="form">
+        <form  action="https://formspree.io/jordyn.saltzman@gmail.com" method="POST">
+          <p>
+            <input
+              id="name"
+              name="name"
+              required="required"
+              placeholder="Enter Your Name"
+            />
+          </p>
+          <p>
+            <input
+              id="email"
+              name="_replyto"
+              required="required"
+              placeholder="Enter Your Email"
+            />
+          </p>
+          <p>
+            <textarea
+              id="message"
+              name="message"
+              required="required"
+              placeholder="Leave A Message"
+            ></textarea>
+          </p>
+          <p>
+            <button
+              type="submit"
+              value="Send"
+              id="submit-btn"
+              onclick="submitForm"
+            />SUBMIT</button>
+          </p>
+          <p id="form-status"></p>
+          </form>
+        </div>
+      </div>
+      <div id="footer">
+        <p>
+          <a href="https://github.com/jordynsaltzman" target="_blank"
+            ><i class="fab fa-github icon"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/jordynsaltzman" target="_blank"
+            ><i class="fab fa-linkedin icon"></i
+          ></a>
+          <a href="mailto:jordyn.saltzman@gmail.com"
+            ><i class="far fa-envelope icon"></i
+          ></a>
+        </p>
+      </div>
+    </div>
+
+    <script src="assets/script/index.js"></script>
+  </body>
 </html>
