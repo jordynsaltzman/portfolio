@@ -6,5 +6,10 @@ Version 2 of my developer portfolio, created using HTML5, CSS3, JavaScript, [pag
 
 [Visit site](https://jordynsaltzman.github.io/portfolio/)
 
+## Known Issues
+
+- Due to the time constraint of this assignment, my projects page is incomplete. 
+- The form on the contact page does not submit. 
+
 ## Preview 
 ![screenshot](assets/images/portfolio_screenshot.JPG)
